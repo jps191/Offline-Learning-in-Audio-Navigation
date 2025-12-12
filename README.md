@@ -1,8 +1,15 @@
+#NOTE parts of this project were too large even after compression, specfically the replay buffer, run logs, and unity envionment
+
+
 #TD3 audio navigation project
 This project aims to test how a replay buffer can influence an agents ability to naviagte
 an audio environment
 
 #setting up the environment
+first you need to pull the oringinal repo from this link
+https://github.com/petrosgk/AudioRL
+swap the asset folder in this project with the one present in this repo
+
 Since the original project was made in 2017, you will need to download unity 2021.2.45f2
 #once you have it installed you will need to change the path set in mainfest.json
 "com.unity.ai.navigation":"file:Packages/com.unity.ai.navigation", to the proper path in your PC 
