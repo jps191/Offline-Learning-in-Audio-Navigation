@@ -1,0 +1,66 @@
+behaviors:
+  ListeningAgent:
+    trainer_type: sac
+    hyperparameters:
+      # SAC Hyperparameters
+      batch_size: 256
+      buffer_size: 500000
+      buffer_init_steps: 20000 #early training needs alot of samples so ived 5x the original
+      learning_rate: 3e-4
+      steps_per_update: 4 #hopefully stabilizes network
+      save_replay_buffer: true
+      
+      # SAC-specific parameters
+      tau: 0.005
+      init_entcoef: 1.0
+      reward_signal_steps_per_update: 1
+      
+    network_settings:
+      normalize: false
+      hidden_units: 256
+      num_layers: 2
+      vis_encode_type: simple
+      
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+        
+    max_steps: 10000000
+    time_horizon: 64
+    summary_freq: 10000
+    threaded: false
+    
+    checkpoint_interval: 100000
+    keep_checkpoints: 5
+    
+env_settings:
+  env_path: AudioRL.exe
+  env_args: null
+  base_port: 5005
+  num_envs: 4
+  seed: -1
+
+engine_settings:
+  width: 84
+  height: 84
+  quality_level: 0
+  time_scale: 200
+  target_frame_rate: -1
+  capture_frame_rate: 60
+  no_graphics: true
+
+environment_parameters: null
+
+checkpoint_settings:
+  load_model: false
+  resume: false
+  force: true
+  train_model: true
+  inference: false
+  results_dir: results
+
+torch_settings:
+  device: cuda
+
+debug: false

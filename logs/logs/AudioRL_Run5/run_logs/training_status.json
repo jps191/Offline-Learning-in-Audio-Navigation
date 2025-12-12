@@ -1,0 +1,65 @@
+{
+    "ListeningAgent": {
+        "checkpoints": [
+            {
+                "steps": 8499996,
+                "file_path": "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-8499996.onnx",
+                "reward": 0.3863625535858094,
+                "creation_time": 1765006408.5034852,
+                "auxillary_file_paths": [
+                    "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-8499996.pt"
+                ]
+            },
+            {
+                "steps": 8999963,
+                "file_path": "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-8999963.onnx",
+                "reward": 0.33168820804516175,
+                "creation_time": 1765007579.4321303,
+                "auxillary_file_paths": [
+                    "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-8999963.pt"
+                ]
+            },
+            {
+                "steps": 9499930,
+                "file_path": "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-9499930.onnx",
+                "reward": 0.3017160660718303,
+                "creation_time": 1765008740.2707164,
+                "auxillary_file_paths": [
+                    "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-9499930.pt"
+                ]
+            },
+            {
+                "steps": 9999930,
+                "file_path": "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-9999930.onnx",
+                "reward": 0.41048777439135675,
+                "creation_time": 1765009833.5540257,
+                "auxillary_file_paths": [
+                    "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-9999930.pt"
+                ]
+            },
+            {
+                "steps": 10000046,
+                "file_path": "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-10000046.onnx",
+                "reward": 0.41161717463399294,
+                "creation_time": 1765009833.6945784,
+                "auxillary_file_paths": [
+                    "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-10000046.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000046,
+            "file_path": "results\\AudioRL_Run5\\ListeningAgent.onnx",
+            "reward": 0.41161717463399294,
+            "creation_time": 1765009833.6945784,
+            "auxillary_file_paths": [
+                "results\\AudioRL_Run5\\ListeningAgent\\ListeningAgent-10000046.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.7.1+cu118"
+    }
+}
